@@ -1,0 +1,50 @@
+Acme\MyBundle\Entity\User:
+    type: entity
+    table: null
+    repositoryClass: Acme\MyBundle\Repository\UserRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        username:
+            type: string
+            length: 255
+        firstname:
+            type: string
+            length: 255
+        name:
+            type: string
+            length: 255
+        address:
+            type: string
+            length: 255
+        zip:
+            type: string
+            length: 255
+        city:
+            type: string
+            length: 255
+        coordinates:
+            type: string
+            length: 255
+        email:
+            type: string
+            length: 255
+        password:
+            type: string
+            length: 255
+        phone:
+            type: string
+            length: 255
+        forgotPw:
+            type: string
+            length: 255
+            column: forgot_pw
+        forgotPwTime:
+            type: string
+            length: 255
+            column: forgot_pw_time
+    lifecycleCallbacks: {  }

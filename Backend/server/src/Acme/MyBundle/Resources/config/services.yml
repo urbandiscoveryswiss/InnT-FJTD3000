@@ -1,0 +1,18 @@
+services:
+#    my.example:
+#        class: Acme\MyBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+
+    acme.my_bundle.api.user:
+        class: Acme\MyBundle\Api\UserApi
+        tags:
+            - { name: "swagger_server.api", api: "user" }
+        calls:
+            - [setContainer, ["@service_container"]]
+
+    acme.my_bundle.api.offer:
+            class: Acme\MyBundle\Api\OfferApi
+            tags:
+                - { name: "swagger_server.api", api: "offer" }
+            calls:
+                - [setContainer, ["@service_container"]]

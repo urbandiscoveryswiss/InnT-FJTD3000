@@ -1,0 +1,30 @@
+Acme\MyBundle\Entity\Offer:
+    type: entity
+    table: null
+    repositoryClass: Acme\MyBundle\Repository\OfferRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        userid:
+             type: integer
+             length: 255
+        title:
+            type: string
+            length: 255
+        description:
+            type: text
+            nullable: true
+        offercondition:
+            type: text
+            nullable: true
+        start:
+            type: datetime
+            nullable: true
+        end:
+            type: datetime
+            nullable: true
+    lifecycleCallbacks: {  }

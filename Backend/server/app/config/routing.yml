@@ -1,0 +1,13 @@
+my:
+    resource: "@MyBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+swagger_server:
+    resource: "@SwaggerServerBundle/Resources/config/routing.yml"
+
+api_login_check:
+    path: /api/login_check
