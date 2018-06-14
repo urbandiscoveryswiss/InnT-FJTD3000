@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android=
+    "http://schemas.android.com/apk/res/android">
+    
+  <PreferenceCategory
+      android:title=
+      "@string/general">
+    <EditTextPreference
+      android:key="distance"
+      android:title=
+         "@string/distance"
+      android:defaultValue="1000" />
+    <CheckBoxPreference
+      android:key="keep"
+      android:title="@string/keep"
+      android:defaultValue="0" />
+
+  </PreferenceCategory>
+
+</PreferenceScreen>
